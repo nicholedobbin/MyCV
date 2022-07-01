@@ -1,0 +1,142 @@
+<!--
+=================================================== DESCRIPTION ============================================================== 
+ 
+This is the home page for my personal portfolio/CV website. It contains:
+    1) Header Section with navigation bar and internal links.
+    2) Projects Home Section with headings, text, external links and image.
+    3) Projects Section with headings and text.
+
+Please see 'script.js' and 'projectScript.js' for description of this website's functionality.
+Please see 'References.txt' for the list of sources I used in this project.
+
+==============================================================================================================================
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Nichole Dobbin</title>
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <!-- Link to Font Awesome -->
+    <script src="https://kit.fontawesome.com/4825a24ca4.js" crossorigin="anonymous"></script>
+    <!-- Link to Devicon Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <!-- Link to SCSS file's complied 'style.css' -->
+    <link href="../CSS_folder/style.css" rel="stylesheet">
+    <!-- Link to jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+    <!-- Link to JS file "script.js" -->
+    <script type="text/javascript" src="../JS_Folder/projectsScript.js"></script>
+  </head>
+
+  <body>
+    <!-- Header Section with Navbar. -->
+    <header class="myNav">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light myNavBackground">
+            <div class="container-fluid">
+            <!-- Navbar button (hamburger) for small viewports -->
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links (collapsible to navbar/hamburger button above for small viewports) -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-fill w-100 me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#homeSection">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#aboutSection">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#skillsSection">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#educationSection">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  active" aria-current="page" href="#projectsSection">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#contactSection">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Projects Home Section with headings, text, social media buttons and image. -->
+    <div class="container-fluid">
+        <div class="row row-cols-2" id="projectsHomeSection"> 
+            <!-- Headings and text -->
+            <div class="col-sm" id="projectsHomeText">
+                <h1>Nichole Dobbin_</h1>
+                <p>
+                    aspiring junior developer,
+                    <br>
+                    teacher turned coder,
+                    <br>
+                    traveller. 
+                </p>
+
+                <!-- Social media buttons (external links) -->
+                <div> 
+                    <button class="socialMediaButtons">
+                        <a href="https://github.com/nicholedobbin" target="blank">
+                            <i class="fa-brands fa-github fa-2xl"></i>
+                        </a>  
+                    </button>
+                    <button class="socialMediaButtons">
+                        <a href="https://github.com/nicholedobbin" target="blank">
+                            <i class="fa-brands fa-linkedin fa-2xl"></i>
+                        </a>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Image -->
+            <div class="col-sm px-0">
+                <img 
+                    src="../Images_folder/berlinCroissant.jpg" 
+                    class="img-fluid" 
+                    id="projectsHomeImage"
+                    alt="silouette of woman on Lion's Head mountain with sunset and city view in background."
+                >
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section with headings and text. -->
+    <div class="container-fluid pb-4 pt-2 darkSection" id="projectsSection">
+        <div class="col-sm" >
+            <h1 class="text-center my-3 pt-5 pb-4">My Projects</h1>
+            <br>
+        </div>
+        <div class="container-sm">
+            <div class="row gx-5">
+                <div class="col-sm px-4 mb-3" id="comingSoon">
+                    <h3>coming soon_</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to Bootstrap's JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,188 @@
+/* =================================================== DESCRIPTION ============================================================== 
+ 
+    This is the CSS stylesheet for my personal portfolio/CV website.
+    Please see 'index.html' and 'projects.html' for the website's HTML structure.
+    Please see 'script.js' and 'projectScript.js' for description of this website's functionality.
+    Please see 'References.txt' for the list of sources I used in this project.
+
+
+======================================================= VARIABLES ==============================================================*/
+
+// Declare colour variables.
+$myWhite: #eceaeb;
+$myGrey: #555;
+
+
+//====================================================== NAV BAR ================================================================
+
+// Set nav bar font family, and position to stick to top of page as user scrolls.
+.myNav {
+    font-family: 'PT Sans', sans-serif;
+    position:sticky;
+    top:0;
+    z-index: 1;
+}
+
+// Set nav bar background colour.
+.myNavBackground {
+    background-color: $myWhite!important;
+}
+
+
+//================================================= BODY AND HEADINGS ==========================================================
+
+// Set body background colour and font-family.
+body {
+    background-color: $myWhite;
+    font-family: 'PT Sans', sans-serif;
+}
+
+// Set all h1 element's font size and weight.
+h1 {
+    font-size: 48px;
+    font-weight:600;
+}
+
+// Set all h3 element's font size, padding and margin.
+h3 {
+    font-size: 26px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+// Set all dark sections' font and background colour.
+.darkSection {
+    background-color: $myGrey;
+    color: $myWhite;
+}
+
+
+//================================================== HOME SECTION ==============================================================
+
+// Style Home Section's text box height, position and margins.
+#homeText {
+    max-height: 200px;
+    position:relative;
+    top:150px;
+    left: 30px;
+    margin: 19.2px 0px;
+}
+
+// Style Home Section's paragraph font size and weight.
+#homeSection p {
+    font-size: 19.2px;
+    font-weight:500; 
+}
+
+
+//================================================== ABOUT SECTION ============================================================
+
+// Style About Section's text link font weight, decoration and colour.
+.textLink {
+    font-weight:bold;
+    text-decoration:underline;
+    color: $myWhite;
+}
+
+
+//================================================= CONTACT SECTION ============================================================
+
+// Style Contact Section's paragraph font size and weight.
+#contactSection p {
+    font-size:19.2px;
+    font-weight:500; 
+}
+
+// Set Contact Section's text position and colour.
+.textOverImage {
+    position: absolute;
+    bottom: 60px;
+    left: 35px;
+    color: $myWhite;
+}
+
+
+//================================================= PROJECTS.HTML PAGE ========================================================
+
+// Style Home Section's text box height, position and margins.
+#projectsHomeText {
+    max-height: 200px;
+    position:relative;
+    top:150px;
+    left: 30px;
+    margin: 19.2px 0px;
+}
+
+
+//==================================================== BUTTONS =================================================================
+
+// Style Social Media Buttons.
+.socialMediaButtons {
+    font-weight: 400;
+    color: $myGrey;
+    font-size: 10px;
+    position: relative;
+    background: none;
+    border: solid 2px $myGrey;
+    border-radius: 4px;
+    padding: 10px 10px;
+    margin: 0px 3px;
+}
+
+// Style Social Media Buttons' icon colour.
+.socialMediaButtons i {
+    color: $myGrey;
+}
+
+// Style Skills Buttons (with icon external links).
+.skillsButtons {
+    font-weight: 400;
+    color: #555;
+    font-size: 40px;
+    font-family:'PT Sans', sans-serif;
+    background: none;
+    border: solid 2px $myGrey;
+    border-radius: 20px;
+    padding: 10px 10px;
+    width: 125px;
+    height: 125px;
+}
+
+// Style Contact Button.
+#contactButton {
+    font-weight: 400;
+    color: $myGrey;
+    font-size: 19.2px;
+    font-family:'PT Sans', sans-serif;
+    background: none;
+    border: solid 2px $myGrey;
+    border-radius: 4px;
+    padding: 10px 10px;
+
+}
+
+
+//==================================================== IMAGES ==================================================================
+
+// Style About Section image size.
+#aboutImage {
+    max-width: 500px;
+    max-height: auto;
+}
+
+// Style Education Section image size.
+#educationImage {
+    max-width: 200px;
+    max-height: auto;
+}
+
+// Set Contact Section's image container position.
+.contactImageContainer{
+    position: relative;
+}
+
+// Set Contact Section's image to background/behind text.
+#contactImage {
+    z-index: 0;
+}
+

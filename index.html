@@ -1,0 +1,456 @@
+<!--
+=================================================== DESCRIPTION ============================================================== 
+ 
+This is the home page for my personal portfolio/CV website. It contains:
+    1) Header Section with navigation bar and internal links.
+    2) Home section with headings, text, external links and image.
+    3) About section with headings, text and image carousel.
+    4) Skills Section with heading and icon buttons with external links.
+    5) Education Section with headings, text and lists.
+    6) Contact Section with headings, background image with text overlay and contact form.
+
+Please see 'script.js' and 'projectScript.js' for description of this website's functionality.
+Please see 'References.txt' for the list of sources I used in this project.
+
+==============================================================================================================================
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Nichole Dobbin</title>
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <!-- Link to Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/4825a24ca4.js" crossorigin="anonymous"></script>
+    <!-- Link to Devicon Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <!-- Link to SCSS file's complied 'style.css' -->
+    <link href="./CSS_folder/style.css" rel="stylesheet">
+    <!-- Link to jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+    <!-- Link to JS file "script.js" -->
+    <script type="text/javascript" src="./JS_Folder/script.js"></script>
+  </head>
+
+  <body>
+    <!-- Header Section with Navbar. -->
+    <header class="myNav">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light myNavBackground">
+            <div class="container-fluid">
+                <!-- Navbar button (hamburger) for small viewports -->
+                <button 
+                    class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarSupportedContent" 
+                    aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar links (collapsible to navbar/hamburger button above for small viewports) -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-fill w-100 me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#homeSection">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutSection">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skillsSection">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#educationSection">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./HTML_folder/projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contactSection">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section with headings, text, social media buttons and image. -->
+    <div class="container-fluid">
+        <div class="row row-cols-2" id="homeSection">
+            <!-- Headings and text -->
+            <div class="col-sm" id="homeText">
+                <h1>Nichole Dobbin_</h1>
+                <p>
+                    aspiring junior developer,
+                    <br>
+                    teacher turned coder,
+                    <br>
+                    traveller. 
+                </p>
+
+                <!-- Social media buttons (external links) -->
+                <div> 
+                    <button class="socialMediaButtons">
+                        <a href="https://github.com/nicholedobbin" target="blank">
+                            <i class="fa-brands fa-github fa-2xl"></i>
+                        </a>  
+                    </button>
+                    <button class="socialMediaButtons">
+                        <a href="https://www.linkedin.com/in/nicholedobbin/" target="blank">
+                            <i class="fa-brands fa-linkedin fa-2xl"></i>
+                        </a>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Image -->
+            <div class="col-sm px-0">
+                <img 
+                    src="./Images_folder/berlinMonument.jpg" 
+                    class="img-fluid" 
+                    id="homeImage"
+                    alt="woman smiling excitedly with Berlin monument in background."
+                >
+            </div>
+        </div>
+    </div>
+    
+    <!-- About Section with headings, text and image carousel. -->
+    <div class="container-fluid pb-4 pt-2 darkSection" id="aboutSection">
+        <div class="col-sm">
+            <h1 class="text-center my-3 pt-5 pb-4">My Journey</h1>
+            <br>
+        </div>
+        <div class="container-sm">
+            <div class="row gx-5">
+                <!-- About Me -->
+                <div class="col-sm-6 px-4 mb-3" id="aboutMe">
+                    <h3>about me_</h3>
+                    <p class="pb-3">
+                        I'm an aspiring junior developer with a background in education, puzzle enthusiast and avid traveler. 
+                        I love exploring new places, and I've been lucky enough to experience a diverse range of countries 
+                        and cultures throughout my career, having spent fifteen years living and working in the UK, Egypt and 
+                        Vietnam.   
+                    </p>
+                    
+                    <p class="pb-3">
+                        I'm currently completing a full-stack software and web-development course through 
+                        <a href="https://www.hyperiondev.com/" target="blank" class="textLink">HyperionDev.</a> 
+                        When I complete this, I hope to combine my tech skills with my experience and knowledge of the 
+                        education sector to help bring about space and change in mainstream education.
+                    </p>
+                    
+                    <p class="pb-3">
+                        I'm also a pretty decent origamist. 
+                    </p>
+                </div>
+
+                <!-- Experience -->
+                <div class="col-sm-6 px-4 mb-3" id="experience">
+                    <h3>experience_</h3>
+                    <p class="pb-3">
+                        Before my leap into the world of tech, I was an early years and primary school teacher living and 
+                        working internationally. After thirteen years of teaching across a range of mainstream and alternative 
+                        education models, I became curious about self-directed education and how ed-tech could support it, 
+                        and took a year's sabbatical to research this.    
+                    </p>
+                    
+                    <p class="pb-3">
+                        In my curiosity and research, I discovered my passion for coding. I love learning new skills and am 
+                        motivated by anything creative or puzzle related, so I decided to combine these passions and discover 
+                        what I can do as a developer. 
+                    </p>
+                </div>
+
+                <!-- Image Carousel -->
+                <div class="row">
+                    <div class="col-sm">
+                        <div id="carouselExampleIndicators" class="carousel slide aboutSectionCarousel" data-bs-ride="carousel">
+                            <!-- Carousel Indicators -->
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <!-- First carousel image --> 
+                                <div class="carousel-item active">
+                                    <img 
+                                        src="./Images_folder/bigBayPark.jpg" 
+                                        class="img-thumbnail rounded mx-auto my-3 d-block w-75" 
+                                        alt="Woman wearing hat sitting on grass with ocean in background."
+                                    >
+                                </div>
+                                <!-- Second carousel image --> 
+                                <div class="carousel-item">
+                                    <img 
+                                        src="./Images_folder/yodaOrigami.jpg" 
+                                        class="img-thumbnail rounded mx-auto my-3 d-block w-75" 
+                                        alt="Origami Yoda character from Star Wars."
+                                    >
+                                </div>
+                                <!-- Third carousel image --> 
+                                <div class="carousel-item">
+                                    <img 
+                                    src="./Images_folder/mekong2.jpg" 
+                                    class="img-thumbnail rounded mx-auto my-3 d-block w-75" 
+                                    alt="Woman sitting on boat in Mekong Delta, Vietnam."
+                                    >
+                                </div>
+                                <!-- Fourth carousel image --> 
+                                <div class="carousel-item">
+                                    <img 
+                                        src="./Images_folder/dragonOrigami.jpg" 
+                                        class="img-thumbnail rounded mx-auto my-3 d-block w-75" 
+                                        alt="Origami dragon."
+                                    >
+                                </div>
+                                <!-- Fifth carousel image --> 
+                                <div class="carousel-item">
+                                    <img 
+                                        src="./Images_folder/berlinView2.jpeg" 
+                                        class="img-thumbnail rounded mx-auto my-3 d-block w-75" 
+                                        alt="Woman smiling overlooking Berlin at night."
+                                    >
+                                </div>
+                            </div>
+                            
+                            <!-- Carousel Buttons-->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Skills Section with heading and icon buttons with text and external links. -->
+    <div class="container-sm pb-4 pt-2" id="skillsSection">
+        <div class="col-sm">
+            <h1 class="text-center my-3 pt-5 pb-4">My Skills, Tools and Languages</h1>
+            <br>
+        </div>
+        <div class="row gx-5 text-center">
+            <!-- HTML5 icon -->
+            <div class="col-sm-3 px-4 py-4">
+                <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="blank">
+                    <button class="skillsButtons mb-0">
+                        <i class="fa-brands fa-html5 fa-lg"></i>
+                        <p class="mb-0 fs-6">HTML5</p>
+                    </button>
+                </a>  
+            </div>
+            <!-- CSS3 icon -->
+            <div class="col-sm-3 px-4 py-4">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="blank">
+                    <button class="skillsButtons mb-0">
+                        <i class="fa-brands fa-css3-alt fa-lg"></i>
+                        <p class="mb-0 fs-6">CSS3</p>
+                    </button>
+                </a>  
+            </div>
+            <!-- JavaScript icon -->
+            <div class="col-sm-3 px-4 py-4">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="blank">
+                    <button class="skillsButtons mb-0">
+                        <i class="fa-brands fa-js fa-lg"></i>
+                        <p class="mb-0 fs-6">JavaScript</p>
+                    </button>
+                </a>  
+            </div>
+            <!-- jQuery icon -->
+            <div class="col-sm-3 px-4 py-4">
+                <a href="https://jquery.com" target="blank">
+                    <button class="skillsButtons mb-0">
+                        <i class="devicon-jquery-plain"></i>
+                        <p class="mb-0 fs-6">jQuery</p>
+                    </button>
+                </a>  
+            </div>
+            <!-- Git icon -->
+            <div class="col-sm-3 px-4 py-4">
+                <a href="https://git-scm.com" target="blank">
+                    <button class="skillsButtons mb-0">
+                        <i class="fa-brands fa-git-alt fa-lg"></i>
+                        <p class="mb-0 fs-6">Git</p>
+                    </button>
+                </a>  
+            </div>
+            <!-- GitHub icon -->
+            <div class="col-sm-3 px-4 py-4">
+                <a href="https://github.com" target="blank">
+                    <button class="skillsButtons mb-0">
+                        <i class="fa-brands fa-github fa-lg"></i>
+                        <p class="mb-0 fs-6">GitHub</p>
+                    </button>
+                </a>  
+            </div>
+            <!-- Sass icon -->
+            <div class="col-sm-3 px-4 py-4">
+                <a href="https://sass-lang.com" target="blank">
+                    <button class="skillsButtons mb-0">
+                        <i class="fa-brands fa-sass fa-lg"></i>
+                        <p class="mb-0 fs-6">Sass</p>
+                    </button>
+                </a>  
+            </div>
+            <!-- Command Line icon -->
+            <div class="col-sm-3 px-4 py-4">
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line" target="blank">
+                    <button class="skillsButtons mb-0">
+                        <i class="fa-solid fa-terminal"></i>
+                        <p class="mb-0 fs-6">Command Line</p>
+                    </button>
+                </a>  
+            </div>
+            <!-- VSCode icon -->
+            <div class="col-sm-3 px-4 py-4">
+                <a href="https://code.visualstudio.com" target="blank">
+                    <button class="skillsButtons mb-0">
+                        <i class="devicon-vscode-plain"></i>
+                        <p class="mb-0 fs-6">VSCode</p>
+                    </button>
+                </a>  
+            </div>
+            <!-- Bootstrap icon -->
+            <div class="col-sm-3 px-4 py-4">
+                <a href="https://getbootstrap.com" target="blank">
+                    <button class="skillsButtons mb-0">
+                        <i class="fa-brands fa-bootstrap fa-lg"></i>
+                        <p class="mb-0 fs-6">Bootstrap</p>
+                    </button>
+                </a>  
+            </div>
+        </div>
+    </div>
+
+    <!-- Education Section with headings, text and lists. -->
+    <div class="container-fluid pb-5 pt-2 darkSection" id="educationSection">
+        <div class="col-sm">
+            <h1 class="text-center my-3 pt-5 pb-4">My Education</h1>
+            <br>
+        </div>
+        <div class="container-sm">
+            <div class="row gx-5">
+                <!-- Teacher Education -->
+                <div class="col-sm-6 px-4" id="teacherEducation">
+                    <h3>teacher_</h3>
+                    <p> 
+                        My teaching qualifications and certificates: 
+                    </p>
+                    <br>
+                    <ul id="educationList">
+                        <li class="geekIcon">Postgraduate Certificate in Education (PGCE), University of Sunderland</li>
+                        <li >BA Hons Business, Anglia Ruskin University</li>
+                        <li >BTEC HND Business Management, RDI and Edexcel</li>
+                        <li >Cambridge Certificate of English Language Teaching to Adults (CELTA), ILA Vietnam</li>
+                        <li >Teaching EAL in Mainstream Classrooms (TESMC), Lexis Education</li>
+                        <li >Child Protection for International Schools (CPIS), Educare</li>
+                    </ul>
+                </div>
+    
+                <!-- Developer Education -->
+                <div class="col-sm-6 px-4" id="developerEducation">
+                    <h3>developer_</h3>
+                    <p>
+                        My developer qualifications and certificates:   
+                    </p>
+                    <br>
+                    <ul>
+                        <li>Immersive Full Stack Software and Web Development Bootcamp, HyperionDev (current, ongoing)</li>
+                        <li>Learn JavaScript Course, Codecademy</li>
+                        <li>Learn HTML Course, Codecademy</li>
+                        <li>Learn CSS Course, Codecademy</li>
+                        <li>Learn Sass Course, Codecademy</li>
+                        <li>Learn The Command Line, Codecademy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section with headings, background image with text overlay and contact form. -->
+    <div class="container-sm pb-4" id="contactSection">
+        <div class="col-sm">
+            <h1 class="my-3 pt-5 pb-4 text-center">Get In Touch</h1>
+            <br>
+        </div>
+        <!-- Background image, text over image and social media buttons. -->
+        <div class="row gx-5">
+            <div class="col-sm-6 px-4 contactImageContainer">
+                <!-- Background image. -->
+                <img 
+                src="./Images_folder/bigBayBeach.jpg" 
+                class="img-fluid" 
+                id="contactImage"
+                alt="Woman taking picture of birds at the beach."
+                >
+                <!-- Text overlay (over image). -->
+                <div class="textOverImage">
+                    <p>
+                        let's connect_ 
+                    </p>
+                </div>
+                <!-- Social media buttons (external links). --> 
+                <div class="text-center mt-4 mb-2">
+                    <button class="socialMediaButtons">
+                        <a href="https://github.com/nicholedobbin" target="_blank">
+                        <i class="fa-brands fa-github  fa-2xl"></i>
+                        </a>
+                    </button>
+                    <button class="socialMediaButtons">
+                        <a href="https://www.linkedin.com/in/nicholedobbin/" target="_blank">
+                        <i class="fa-brands fa-linkedin fa-2xl"></i>
+                        </a>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Contact form. -->
+            <div class="col-sm-6 px-4" id="contactMe">
+                <h3>contact me here_</h3>
+                <form id="contactForm">
+                    <!-- Name input. -->
+                    <div class="mb-3">
+                        <input class="form-control" id="name" type="text" placeholder="Name">
+                    </div>
+                    <!-- Email address input. -->
+                    <div class="mb-3">
+                        <input class="form-control" id="emailAddress" type="email" placeholder="Email Address">
+                    </div>
+                    <!-- Message input. -->
+                    <div class="mb-3">
+                        <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;"></textarea>
+                    </div>
+                    <!-- Form submit button. -->
+                    <div class="text-center" >
+                        <button type="submit" class="btn btn-primary my-2" id="contactButton">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to Bootstrap's JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

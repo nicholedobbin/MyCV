@@ -1,0 +1,18 @@
+
+========================================== REFERENCES ============================================================
+
+Bootstrap 5:
+    * https://getbootstrap.com/docs/5.0/getting-started/introduction/
+
+Positioning text over image:
+    * https://www.w3schools.com/cssref/pr_pos_z-index.asp
+    * https://www.w3schools.com/howto/howto_css_image_text.asp
+    * https://www.w3schools.com/css/css_positioning.asp
+    * https://www.quora.com/How-can-I-place-text-over-image-in-bootstrap
+
+Creating and using carousels:
+    * https://stackoverflow.com/questions/28589911/bootstrap-change-carousel-height
+    * https://www.w3schools.com/bootstrap/bootstrap_carousel.asp
+
+
+
